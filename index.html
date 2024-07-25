@@ -10,6 +10,38 @@
 
 <link rel="stylesheet" href="arsh.css">
 
+	<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Prevents scrolling when images zoom out */
+    }
+    .row {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        position: relative;
+        height: 100vh; /* Full viewport height */
+    }
+    .image-container {
+        position: relative;
+        width: 30%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center center;
+    }
+    .image-container:hover img {
+        transform: scale(3); /* Adjust scale as needed */
+    }
+</style>
+
 	
 <body>
 <div id="header">
@@ -58,46 +90,18 @@ Additionally, I also like Electronics and learning Embedded System, I have creat
 <!----<h1><span style="color:#35aaff">My</span><span style="color:#ff355e"> Skills</span></h1>---->
       <h1><span style="color:ff355e">My</span><span style="color:#35ffaa"> Skills  </span></h1>
 
-	<style>
-    body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Prevents scrolling when images zoom out */
-    }
-    .row {
-        display: flex;
-        justify-content: space-around;
-        overflow: hidden;
-        position: relative;
-        height: 100vh; /* Full viewport height */
-    }
-    .image-container {
-        position: relative;
-        width: 30%;
-        overflow: hidden;
-    }
-    .image-container img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
-        transform-origin: center center;
-    }
-    .row:hover .image-container img {
-        transform: scale(3); /* Adjust scale as needed */
-    }
-</style>
 	
     <div class="row">
-       <div class="image-container">
+    <div class="image-container">
         <img src="images/Programming.png" alt="Programming">
     </div>
-        <div class="image-container">
+    <div class="image-container">
         <img src="path/to/your/image2.jpg" alt="Image 2">
     </div>
     <div class="image-container">
         <img src="path/to/your/image3.jpg" alt="Image 3">
     </div>
-    </div>
+</div>
 		
 <h3 style="margin-left: 150px; color: #ff355e;">> Programming: <span style="color:#35ffaa">C <span style="color: white">|</span> C++ <span style="color: white">|</span> Java <span style="color: white">|</span> Python <span style="color: white">|</span> HTML
 <span style="color: white">|</span> CSS <span style="color: white">|</span> Matlab(Basic)</span></h3>
