@@ -62,16 +62,31 @@ Additionally, I also like Electronics and learning Embedded System, I have creat
         .row {
             display: flex;
             justify-content: space-around;
-	    overflow: hidden; /* Added overflow hidden */	
+	    overflow: hidden; /* Added overflow hidden */
+	    position: relative; /* Ensures positioning context for the container */	
         }
+	.image-container {
+        position: relative; /* Ensures positioning context for the image */
+        overflow: hidden; /* Hides the zoomed image overflow */
+        width: 30%; /* Adjust width as needed */
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+        transform-origin: center center; /* Centers the zoom effect */
+    }
+    .image-container:hover img {
+        transform: scale(1.5); /* Adjust scale as needed */
+    }	
         .row img {
             width: 30%; /* Adjust the width as needed */
             height: auto;
 	    transition: transform 0.3s ease-in-out;	
-            transform-origin: center center; /* Center the zoom */
+           /* transform-origin: center center;  Center the zoom */
 	}
 	.row img.zoom-out:hover {
-            transform: scale(2.2); /* Zoom out effect */
+            /*transform: scale(2.2); /* Zoom out effect */
         }
     </style>
 
