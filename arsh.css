@@ -198,6 +198,53 @@ nav ul li a:hover::after{
              padding: 20px 40px;
 }
 
+/* Add this to your arsh.css file */
+
+#my-skills {
+    padding: 20px 5%;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.skill-item img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover img {
+    transform: scale(2); /* Adjust the scale as needed */
+}
+
+.skill-item:hover {
+    z-index: 10;
+}
+
+/* Centering the zoomed image on the screen */
+.skill-item img {
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Center and scale */
+    z-index: 1000;
+    width: 80vw; /* Adjust width as needed */
+    height: auto;
+}
 
 
 
