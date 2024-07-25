@@ -224,7 +224,7 @@ nav ul li a:hover::after{
 }
 
 .skill-item:hover img {
-    transform: scale(2); /* Adjust the scale as needed */
+    transform: scale(1.2); /* Adjust the scale as needed */
 }
 
 .skill-item:hover {
@@ -240,7 +240,7 @@ nav ul li a:hover::after{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(2); /* Center and scale */
+    transform: translate(-50%, -50%) scale(1.2); /* Center and scale */
     z-index: 1000;
     width: 80vw; /* Adjust width as needed */
     height: auto;
