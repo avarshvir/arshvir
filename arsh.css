@@ -220,11 +220,11 @@ nav ul li a:hover::after{
 
 .skill-item img {
     width: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, width 0.3s ease; /* Add width transition */
 }
 
 .skill-item:hover img {
-    transform: scale(1.2); /* Adjust the scale as needed */
+    transform: scale(1.5); /* Adjust the scale as needed */
 }
 
 .skill-item:hover {
@@ -233,19 +233,15 @@ nav ul li a:hover::after{
 
 /* Centering the zoomed image on the screen */
 .skill-item img {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, width 0.3s ease; /* Add width transition */
 }
 
 .skill-item:hover img {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.2); /* Center and scale */
+    transform: translate(-50%, -50%) scale(1.5); /* Center and scale */
     z-index: 1000;
-    width: 80vw; /* Adjust width as needed */
+    width: 60vw; /* Adjust width as needed */
     height: auto;
 }
-
-
-
-
