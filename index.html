@@ -59,42 +59,44 @@ Additionally, I also like Electronics and learning Embedded System, I have creat
       <h1><span style="color:ff355e">My</span><span style="color:#35ffaa"> Skills  </span></h1>
 
 	<style>
-        .row {
-            display: flex;
-            justify-content: space-around;
-	    overflow: hidden; /* Added overflow hidden */
-	    position: relative; /* Ensures positioning context for the container */	
-        }
-	.image-container {
-        position: relative; /* Ensures positioning context for the image */
-        overflow: hidden; /* Hides the zoomed image overflow */
-        width: 30%; /* Adjust width as needed */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Prevents scrolling when images zoom out */
+    }
+    .row {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        position: relative;
+        height: 100vh; /* Full viewport height */
+    }
+    .image-container {
+        position: relative;
+        width: 30%;
+        overflow: hidden;
     }
     .image-container img {
         width: 100%;
         height: auto;
         transition: transform 0.3s ease-in-out;
-        transform-origin: center center; /* Centers the zoom effect */
+        transform-origin: center center;
     }
-    .image-container:hover img {
-        transform: scale(1.5); /* Adjust scale as needed */
-    }	
-        .row img {
-            width: 30%; /* Adjust the width as needed */
-            height: auto;
-	    transition: transform 0.3s ease-in-out;	
-           /* transform-origin: center center;  Center the zoom */
-	}
-	.row img.zoom-out:hover {
-            /*transform: scale(2.2); /* Zoom out effect */
-        }
-    </style>
-
+    .row:hover .image-container img {
+        transform: scale(3); /* Adjust scale as needed */
+    }
+</style>
 	
     <div class="row">
-        <img src="images/Programming.png" alt="Programming" class="zoom-out">
+       <div class="image-container">
+        <img src="images/Programming.png" alt="Programming">
+    </div>
+        <div class="image-container">
         <img src="path/to/your/image2.jpg" alt="Image 2">
+    </div>
+    <div class="image-container">
         <img src="path/to/your/image3.jpg" alt="Image 3">
+    </div>
     </div>
 		
 <h3 style="margin-left: 150px; color: #ff355e;">> Programming: <span style="color:#35ffaa">C <span style="color: white">|</span> C++ <span style="color: white">|</span> Java <span style="color: white">|</span> Python <span style="color: white">|</span> HTML
