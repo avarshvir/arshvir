@@ -1,0 +1,220 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 5px 0; /* Add some padding */
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px; /* Line height */
+    background-color: #00ff00; /* Line color */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Position below the text */
+    transform: scaleX(0); /* Start with no line */
+    transition: transform 0.3s ease; /* Animation for the line */
+}
+
+nav a:hover::after {
+    transform: scaleX(1); /* Expand the line on hover */
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #00ff00;
+}
+.no-border { 
+    border-bottom: none; /* Removes border for specific h2 */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+}
+
+#typing-text {
+    font-size: 2em; /* Adjust size as needed */
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: #00ff00; /* Typing text color */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+    border-right: 2px solid #00ff00; /* Cursor effect */
+    animation: blink 0.7s step-end infinite; /* Blinking cursor */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Blink effect */
+    }
+}
+
+.pixel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 main columns */
+    gap: 20px; /* Space between main boxes */
+    padding: 20px; /* Padding around the grid */
+}
+
+.pixel-box {
+    background-color: #2a2a2a; 
+    border: 2px solid #00ff00; 
+    padding: 10px; 
+    color: #e0e0e0; 
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 0.9em;
+    display: flex; 
+    flex-direction: column; 
+    align-items: 100; /* Center content */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.pixel-box:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+
+.sub-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2px; 
+    width: 100%; 
+    margin-top: 10px; 
+}
+
+
+
+
+/*
+.sub-grid div {
+    background-color: #1a1a1a;
+    border: 2px solid #00ff00; 
+    padding: 5px;
+    text-align: center; 
+}
+*/
+
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between items */
+    /*margin-top: 10px; /* Space above the grid */
+    margin: 0 1.1cm;
+    
+}
+
+.education-item {
+    background-color: #2a2a2a; /* Background color for the boxes */
+    border: 2px solid #00ff00; /* Green pixel-like border */
+    height: 6cm; /* Set height to 10 cm */
+    width: 100%; /* Full width of the grid cell */
+    color: #e0e0e0; /* Text color */
+    font-family: 'Courier New', Courier, monospace; /* Pixelated font */
+    text-align: center; /* Center text */
+    padding: 15px; /* Padding inside boxes for spacing */
+    box-sizing: border-box; /* Include padding and border in the height and width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom effect */
+    
+}
+
+.education-item:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a more pronounced effect */
+}
+.dropdown {
+    position: relative; /* Keep this to position the dropdown correctly */
+}
+
+.dropdown-content {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Position it below the parent */
+    background-color: #2a2a2a; /* Background color for dropdown */
+    border: 2px solid #00ff00; /* Green border */
+    min-width: 160px; /* Minimum width for dropdown */
+    z-index: 1; /* Ensure it appears above other elements */
+    top: 100%; /* Position it below the parent */
+    left: 0; /* Align to the left of the parent */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: white; /* Link color */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none; /* No underline */
+    display: flex; /* Align image and text */
+    align-items: center; /* Center vertically */
+}
+
+.dropdown-content a img {
+    width: 30px; /* Set image width */
+    height: 30px; /* Set image height */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.dropdown-content a:hover {
+    background-color: #444; /* Change background on hover */
+}
+
+
+.hover-underline {
+    position: relative; /* Position for pseudo-element */
+    color: #e0e0e0; /* Set link color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.hover-underline::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it relative to the link */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    width: 100%; /* Full width of the text */
+    height: 2px; /* Thickness of the underline */
+    background-color: #e0e0e0; /* Underline color */
+    transform: scaleX(0); /* Start hidden */
+    transition: transform 0.3s ease; /* Smooth transition for underline */
+}
+
+.hover-underline:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
