@@ -1,0 +1,105 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.certificate-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for certificates */
+    gap: 20px; /* Space between certificate entries */
+    padding: 20px;
+}
+
+.certificate-entry {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the items */
+    background-color: #2a2a2a;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.certificate-entry:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.badge-image {
+    width: 150px; /* Set width for square format */
+    height: 100px; /* Set height for square format */
+    object-fit: cover; /* Ensure the image covers the square */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.certificate-text {
+    text-align: center; /* Center text below the image */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2a2a2a;
+}
+
+
+.dropdown {
+    position: relative; /* Keep this to position the dropdown correctly */
+}
+
+.dropdown-content {
+    display: none; /* Initially hide the dropdown */
+    position: absolute; /* Position it below the parent */
+    background-color: #2a2a2a; /* Background color for dropdown */
+    border: 2px solid #00ff00; /* Green border */
+    min-width: 160px; /* Minimum width for dropdown */
+    z-index: 1; /* Ensure it appears above other elements */
+    top: 100%; /* Position it below the parent */
+    left: 0; /* Align to the left of the parent */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: white; /* Link color */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none; /* No underline */
+    display: flex; /* Align image and text */
+    align-items: center; /* Center vertically */
+}
+
+.dropdown-content a img {
+    width: 30px; /* Set image width */
+    height: 30px; /* Set image height */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.dropdown-content a:hover {
+    background-color: #444; /* Change background on hover */
+}
