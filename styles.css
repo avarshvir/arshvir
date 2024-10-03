@@ -246,3 +246,30 @@ footer {
     transform: scale(1.05); /* Zoom effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a more pronounced effect */
 }
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+    gap: 10px; /* Space between items */
+    /*margin-top: 10px; /* Space above the grid */
+    margin: 0 1.1cm;
+}
+
+.project-item {
+    background-color: #2a2a2a; /* Background color for the boxes */
+    border: 2px solid #00ff00; /* Green pixel-like border */
+    height: 4cm; /* Set height to 10 cm */
+    width: 100%; /* Full width of the grid cell */
+    color: #e0e0e0; /* Text color */
+    font-family: 'Courier New', Courier, monospace; /* Pixelated font */
+    text-align: center; /* Center text */
+    padding: 15px; /* Padding inside boxes for spacing */
+    box-sizing: border-box; /* Include padding and border in the height and width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom effect */
+    
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a more pronounced effect */
+}
