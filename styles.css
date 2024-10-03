@@ -249,7 +249,7 @@ footer {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     gap: 10px; /* Space between items */
     /*margin-top: 10px; /* Space above the grid */
     margin: 0 1.1cm;
@@ -258,7 +258,7 @@ footer {
 .project-item {
     background-color: #2a2a2a; /* Background color for the boxes */
     border: 2px solid #00ff00; /* Green pixel-like border */
-    height: 4cm; /* Set height to 10 cm */
+    height: 2cm; /* Set height to 10 cm */
     width: 100%; /* Full width of the grid cell */
     color: #e0e0e0; /* Text color */
     font-family: 'Courier New', Courier, monospace; /* Pixelated font */
