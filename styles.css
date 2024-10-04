@@ -7,7 +7,7 @@ body {
 
 header {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 
@@ -47,7 +47,7 @@ nav a:hover::after {
 }
 
 section {
-    padding: 50px 20px;
+    padding: 30px 20px;
 }
 
 h2 {
@@ -300,4 +300,66 @@ footer {
 .services-item:hover {
     transform: scale(1.05); /* Zoom effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for a more pronounced effect */
+}
+header {
+    text-align: center; /* Center align header */
+    position: relative; /* For positioning the dropdowns */
+}
+
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Size of the icon */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Navigation styles for desktop */
+nav {
+    display: flex; /* Horizontal layout for desktop */
+    justify-content: center; /* Center the navigation items */
+}
+
+nav ul {
+    display: flex; /* Horizontal layout for menu */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove bullet points */
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on small screens */
+        margin: 10px; /* Add margin for spacing */
+    }
+
+    nav {
+        display: none; /* Hide the navigation by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        background-color: #1a1a1a; /* Match your background color */
+        position: absolute; /* Position it over other content */
+        top: 60px; /* Adjust based on header height */
+        width: 100%; /* Full width */
+        z-index: 10; /* Make sure it stays on top */
+    }
+
+    nav.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0; /* Reset padding */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Spacing between items */
+    }
+
+    .dropdown-content {
+        display: none; /* Hide dropdowns by default */
+        flex-direction: column; /* Stack dropdown items */
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex; /* Show dropdown on hover */
+    }
 }

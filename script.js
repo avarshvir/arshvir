@@ -235,3 +235,8 @@ function typeNextLine() {
 // Start typing the first line
 typeFirstLine();
 */
+
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+}
