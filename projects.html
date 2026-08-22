@@ -15,14 +15,19 @@
             <a href="index.html" class="logo">Arshvir.<span>Dev</span></a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Me</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
                 <li class="dropdown">
                     <a href="javascript:void(0)" class="dropbtn">Other Portfolio <i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="#" target="_blank">GitHub</a>
-                        <a href="#" target="_blank">CodeForces</a>
-                        <a href="#" target="_blank">LeetCode</a>
-                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/avarshvir" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://codeforces.com/profile/arshvir7" target="_blank"><i class="fa-solid fa-code"></i> CodeForces</a>
+                        <a href="https://leetcode.com/u/avarshvir/" target="_blank"><i class="fa-solid fa-laptop-code"></i> LeetCode</a>
+                        <a href="https://in.linkedin.com/in/arshvir-995a91203" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://medium.com/@arshvir21303031" target="_blank"><i class="fa-brands fa-medium"></i> Medium</a>
+                        <a href="#" target="_blank"><i class="fas fa-globe"></i> Other Links</a> 
                     </div>
                 </li>
             </ul>
@@ -30,12 +35,82 @@
     </nav>
 
     <header class="page-header">
-        <h1>My Portfolio Projects</h1>
+        <h1>My All Projects</h1>
         <p>A comprehensive list of my software development, AI, and machine learning projects.</p>
     </header>
 
     <section class="all-projects">
         <div class="container project-grid-full">
+            
+            <div class="project-detailed-card">
+                <h3>Turing AI OS (Developed on a 14-year-old PC - 2012)</h3>
+                <ul class="project-bullets">
+                    <li>Engineered Turing AI OS, an AI-native Linux desktop layer integrating local LLM inference, agentic system tools, persistent memory, and natural-language OS interaction using Python and KDE Neon.</li>
+                    <li>Integrated Ollama and LangChain to run privacy-first local LLM inference with token streaming, configurable models, temperature controls, and a lightweight qwen2.5:1.5b default model optimized for CPU-based execution.</li>
+                    <li>Implemented persistent AI memory using ChromaDB, embedding and storing conversations locally.</li>
+                    <li>Developed agentic system capabilities including a natural-language terminal that converts user intent into executable Bash commands, file-system operations, and context-aware code/project analysis with user confirmation.</li>
+                    <li>Built a modular PyQt6 desktop interface featuring an always-available AI Sidebar, Spotlight command palette, Vision analyzer, and AI Control Panel, creating an integrated AI-native operating environment with low-resource local execution.</li>
+                    <li>Packaged into a custom ISO using Cubic.</li>
+                </ul>
+                <a href="https://turing-aios.vercel.app" target="_blank" class="btn btn-sm">Website</a>                
+                <a href="https://github.com/avarshvir/turing-ai-os" target="_blank" class="btn btn-sm">View Project</a>
+            </div>
+
+            <div class="project-detailed-card">
+                <h3>Visio AI (ML & Data Science Platform)</h3>
+                <ul class="project-bullets">
+                    <li> Developed an end-to-end ML and data science platform enabling dataset upload, automated data cleaning, EDA, and visualization for 
+supervised and unsupervised learning tasks.</li>
+                    <li>Implemented training pipelines for regression, classification, and clustering algorithms, with intelligent algorithm suggestions based on target 
+variables.</li>
+                    <li>Enabled model export functionality allowing users to download trained models for reuse in external applications.</li>
+                    <li>Integrated OpenRouter API for visual LLM to find hidden patterns of images, extending platform capabilities beyond tabular data.</li>
+                    <li>Built a no-code, user-friendly interface using Streamlit, enabling non-technical users to perform end-to- end ML workflows.</li>
+                </ul>
+                <a href="https://visioai.streamlit.app" class="btn btn-sm" target="_blank">View Live</a>
+                <a href="https://github.com/avarshvir/visio_ai" class="btn btn-sm" target="_blank">View Project</a>
+                
+            </div>
+
+            <div class="project-detailed-card">
+                <h3>FABX (AI - Powered Reverse Engineering Tool)</h3>
+                <ul class="project-bullets">
+                    <li>Developed FABX, an AI-powered reverse engineering and file intelligence platform that analyzes executables, ML models, databases, and structured files, transforming complex software artifacts into structured technical intelligence.</li>
+                    <li>Engineered a multi-format analysis pipeline supporting EXE, DLL, ELF, SO, BIN, ONNX, PyTorch, Pickle/Joblib, SQLite, JSON, YAML, INI, and TOML, with automatic file-type detection and specialized analyzers.</li>
+                    <li>Integrated Rizin and local Ollama LLMs to combine traditional static analysis with AI-powered explanations, behavioral analysis, security insights, and best-effort C/C++ source reconstruction from compiled artifacts.</li>    
+                    <li>Built automated ML-model intelligence capabilities that extract layers, operators, tensors, parameter counts, inputs/outputs, checkpoint metadata, and generate ONNX/PyTorch architecture visualizations.</li>
+                    <li>Developed an interactive analysis interface using NiceGUI, Plotly, and NetworkX, providing visual graphs for binary structures, model computation graphs, database relationships, and configuration trees alongside AI-generated technical reports.</li>
+                </ul>
+                <a href="https://jaiho-digital.onrender.com/products_pages/fabx.html" class="btn btn-sm" target="_blank">Website</a>
+                <a href="https://github.com/avarshvir/FABX" class="btn btn-sm" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-detailed-card">
+                <h3>NGIBS (Next Gen Intelligent Browsing System)</h3>
+                <ul class="project-bullets">
+                    <li>Developed NGIBS, a privacy-focused AI research and browsing system that runs fully locally on user hardware.</li>
+                    <li>Implemented multiple AI intelligence modes including Quick Search, Live Search, Deep Search, and Context Mode to support offline 
+knowledge retrieval, reasoning, and memory-aware conversations.</li>
+                    <li>Designed a modular architecture allowing users to download and integrate any compatible LLM for local inference. </li>    
+                    <li>Integrated Ollama as the backend engine to manage local model execution and inference. </li>
+                </ul>
+                <a href="https://ngibs.vercel.app/" class="btn btn-sm" target="_blank">Website</a>
+                <a href="https://github.com/avarshvir/ngibs" class="btn btn-sm" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-detailed-card">
+                <h3>NanoOCR - Optical Character Recognition Model</h3>
+                <ul class="project-bullets">
+                    <li>Developed NanoOCR, a lightweight Optical Character Recognition (OCR) system trained from scratch on ~45,500 character images across 36 alphanumeric classes, achieving 97.46% validation accuracy.</li>
+                    <li>Designed a compact CNN architecture with Batch Normalization, ReLU, MaxPooling, Dropout, and a fully connected classification head, reducing the model to just 626K parameters (~2.4 MB)./li>
+                    <li>Optimized model training using AdamW and Cross-Entropy Loss, achieving 97.22% training accuracy in ~45 seconds over 5 epochs on a single T4 GPU.</li>
+                    <li>Built an end-to-end image processing pipeline using OpenCV for Gaussian denoising, adaptive thresholding, contour-based character segmentation, and left-to-right bounding-box sorting.</li>
+                    <li>Deployed the OCR model as a web application using FastAPI, ONNX CPU inference, JavaScript, HTML, and Tailwind CSS, enabling near-real-time character recognition with a lightweight inference footprint.</li>    
+                </ul>
+                <a href="https://www.kaggle.com/datasets/preatcher/standard-ocr-dataset" class="btn btn-sm" target="_blank">Kaggle Dataset</a>
+                <a href="https://github.com/avarshvir/visio_ai" class="btn btn-sm" target="_blank">View Project</a>
+                
+            </div>
             
             <div class="project-detailed-card">
                 <h3>PPE Object Detection System</h3>
@@ -45,8 +120,8 @@
                     <li>Evaluated model performance using IoU-based metrics: Precision (89%), Recall (89%), mAP@50 (91%).</li>
                     <li>Built an AI-powered web app using Gradio and OpenCV for real-time camera-based compliance detection.</li>
                 </ul>
-                <a href="https://huggingface.co/spaces/arshvir/PPE_Object_Detection_System" class="btn btn-sm" target="_blank">View Project</a>
-                <a href="https://github.com/avarshvir/ppe_object_detection_system" class="btn btn-sm" target="_blank">Source Code</a>
+                <!--<a href="https://huggingface.co/spaces/arshvir/PPE_Object_Detection_System" class="btn btn-sm" target="_blank">View Project</a>-->
+                <a href="https://github.com/avarshvir/ppe_object_detection_system" class="btn btn-sm" target="_blank">View Project</a>
                 
             </div>
 
@@ -61,21 +136,10 @@
                 <a href="https://github.com/avarshvir/fission_ai" class="btn btn-sm" target="_blank">View Project</a>
             </div>
 
-            <div class="project-detailed-card">
-                <h3>Visio AI (ML & Data Science Platform)</h3>
-                <ul class="project-bullets">
-                    <li>Developed an end-to-end ML platform enabling automated data cleaning, EDA, and visualization.</li>
-                    <li>Implemented training pipelines for regression, classification, and clustering with intelligent suggestions.</li>
-                    <li>Enabled model export functionality and integrated OpenRouter API for visual LLMs to find hidden image patterns.</li>
-                    <li>Built a no-code interface using Streamlit for non-technical users.</li>
-                </ul>
-                <a href="https://visioai.streamlit.app" class="btn btn-sm" target="_blank">View Project</a>
-                <a href="https://github.com/avarshvir/visio_ai" class="btn btn-sm" target="_blank">Source Code</a>
-                
-            </div>
+            
 
             <div class="project-detailed-card">
-                <h3>Gita-Py – Python NLP Utility Library</h3>
+                <h3>Gita-Py - Python NLP Utility Library</h3>
                 <ul class="project-bullets">
                     <li>Published a lightweight Python library to access Bhagavad Gita summaries, verses, and quotes programmatically.</li>
                     <li>Designed clean utility functions and packaged the library via PyPI (pip install gita-py).</li>
@@ -83,26 +147,44 @@
                 </ul>
                 <a href="https://github.com/avarshvir/gita" class="btn btn-sm">GitHub</a> <a href="https://pypi.org/project/gita-py/" class="btn btn-sm">PyPI</a>
             </div>
-
+            
             <div class="project-detailed-card">
-                <h3>NGIBS (Next Gen Intelligent Browsing System)</h3>
+                <h3>DocsMind</h3>
                 <ul class="project-bullets">
-                    <li>Software focused on private offline search with Quick Search (Local LLM), Live Search (Agentic System via Langchain), and Context-Aware Chat.</li>
-                    <li>Tech Stack: Pywebview, HTML/CSS/JS, Python, LangChain, Ollama, DuckDuckGo API, Wikipedia module.</li>
+                    <li>Built DocsMind, a RAG-based document assistant that lets users chat naturally with PDF, TXT, and DOCX files.</li>
+                    <li>Developed the complete document-to-answer pipeline using LangChain, ChromaDB, and Ollama, including chunking, embeddings, retrieval, and response generation.</li>
+                    <li>Added source-grounded responses that show the document context used for each answer, improving transparency and reducing hallucinations.</li>    
+                    <li>Implemented conversational memory to support follow-up questions and maintain context throughout a document chat session.</li>
+                    <li>Built an LLM-as-a-Judge evaluation system, achieving 5/5 Context Relevance and 5/5 Faithfulness on sample benchmark queries.</li>
                 </ul>
-                <a href="#" class="btn btn-sm">View Project</a>
+                <a href="https://github.com/avarshvir/DocsMind" class="btn btn-sm" target="_blank">View Project</a>
             </div>
 
             <div class="project-detailed-card">
-                <h3>Turing AI OS (Pending)</h3>
+                <h3>NLP Intelligent Lab</h3>
                 <ul class="project-bullets">
-                    <li>Built on top of KDE Neon featuring an AI Sidebar, Mini AI Spotlight, Right-Click file analysis, and AI Terminal.</li>
-                    <li>Includes an AI Control Panel to manage LLMs/memory and 'Turing Hub' for utility applications.</li>
-                    <li>Packaged into a custom ISO using Cubic.</li>
+                    <li>Built NLP Intelligent Lab, an interactive Python-based playground for learning and experimenting with NLP and language understanding.</li>
+                    <li>Implemented hands-on visualizations for core NLP concepts including tokenization, stemming, lemmatization, POS tagging, NER, and text preprocessing.</li>
+                    <li>Added practical experiments covering TF-IDF, Bag-of-Words, word embeddings, text classification, and language modeling.</li>
+                    <li>Explored modern deep-learning approaches including RNNs, LSTMs, Transformers, and attention-based language models.</li>
+                    <li>Designed the lab to turn complex NLP concepts into interactive experiments and visual outputs, making model behavior easier to understand and evaluate.</li>
                 </ul>
-                <a href="#" class="btn btn-sm">View Project</a>
+                <a href="https://github.com/avarshvir/nlp_intelligent_lab" class="btn btn-sm" target="_blank">View Project</a>
             </div>
 
+            <div class="project-detailed-card">
+                <h3>Project Taste - for Developers, Engineers, Tester and ML Engineers</h3>
+                <ul class="project-bullets">
+                    <li>Built Project Taste, a developer-focused toolkit bringing together 150+ practical tools for everyday software development and engineering workflows.</li>
+                    <li>Developed utilities across areas including API testing, JSON/XML processing, encoding/decoding, hashing, regex, networking, and data conversion.</li>
+                    <li>Designed a single, organized interface that reduces the need to switch between multiple online developer tools and improves day-to-day development productivity.</li>
+                    <li>Focused on fast, lightweight, and reusable utilities, making common developer tasks accessible through simple, purpose-built workflows.</li>
+                    <li>Organized and maintained 150+ tools as a growing open-source project, with a focus on usability, extensibility, and practical developer needs.</li>
+                </ul>
+                <a href="https://avarshvir.github.io/project-taste/" class="btn btn-sm" target="_blank">View Live</a>    
+                <a href="https://github.com/avarshvir/project-taste" class="btn btn-sm" target="_blank">View Project</a>
+            </div>
+            
             <div class="project-detailed-card">
                 <h3>Dev Link</h3>
                 <ul class="project-bullets">
@@ -121,13 +203,40 @@
                 <a href="#" class="btn btn-sm">View Project</a>
             </div>
 
+        
             <div class="project-detailed-card">
-                <h3>NLP Intelligent Lab</h3>
+                <h3>Kernel Pulse</h3>
                 <ul class="project-bullets">
-                    <li>Interactive Python-powered NLP playground for learning and experimenting.</li>
-                    <li>Visualizes natural language processing concepts from basic tokenization to advanced deep learning understanding.</li>
+                    <li>Built Kernel Pulse, a simple tool to monitor websites and APIs and check if they are up or down in real time.</li>
+                    <li>Created a serverless monitoring system without a database, keeping it lightweight, fast, and easy to deploy.</li>
+                    <li>Added a public status page and JSON API so users and other applications can easily view service health and uptime.</li>
+                    </ul>
+                <a href="https://jaiho-links.vercel.app/" class="btn btn-sm" target="_blank">View Live</a>    
+                
+            </div>
+
+            <div class="project-detailed-card">
+                <h3>Jaiho IP</h3>
+                <ul class="project-bullets">
+                    <li>Built Jaiho IP, a simple and privacy-focused tool to detect a user’s public IP address.</li>
+                    <li>Developed a REST API that lets other applications easily retrieve IP information.</li>
+                    <li>Designed the service with a privacy-first approach, avoiding unnecessary tracking and data collection.</li>
+                    <li>Built it as an open-source, lightweight service that is easy to use, integrate, and deploy.</li>    
                 </ul>
-                <a href="#" class="btn btn-sm">View Project</a>
+                <a href="https://jaiho-ip.vercel.app/" class="btn btn-sm" target="_blank">View Live</a>    
+                
+            </div>
+
+            <div class="project-detailed-card">
+                <h3>Jaiho Invoice Generator</h3>
+                <ul class="project-bullets">
+                    <li>Built a professional invoice generator that allows users to quickly create and download clean, customized invoices.</li>
+                    <li>Added support for business details, customer information, products/services, taxes, discounts, and invoice totals.</li>
+                    <li>Designed a simple and responsive interface to make invoice creation easy for both businesses and individuals.</li>
+                    <li>Implemented PDF-ready invoice generation, making invoices easy to save, print, and share with customers.</li>    
+                </ul>
+                <a href="https://jaiho-invoicegen.vercel.app/" class="btn btn-sm" target="_blank">View Live</a>    
+                
             </div>
 
         </div>
@@ -136,7 +245,7 @@
     <footer id="footer">
         <div class="footer-bottom">
             <p>Made with ❤️ by Arshvir</p>
-            <p>&copy; 2026 Arshvir. All rights reserved. | Punjab, India</p>
+            <p>&copy; 2026 Arshvir. All rights reserved. | India</p>
         </div>
     </footer>
 
