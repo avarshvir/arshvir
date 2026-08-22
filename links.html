@@ -121,24 +121,28 @@
     .link-content {
         margin-left: 16px;
         flex: 1;
+        min-width: 0;
     }
 
     .link-content h3 {
         margin: 0 0 4px;
         font-size: 1rem;
         font-weight: 600;
+        overflow-wrap: anywhere;
     }
 
     .link-content p {
         margin: 0;
         font-size: 0.85rem;
         color: #64748b;
+        overflow-wrap: anywhere;
     }
 
     .link-arrow {
         color: #94a3b8;
         font-size: 0.9rem;
         transition: 0.2s ease;
+        flex: 0 0 auto;
     }
 
     .link-card:hover .link-arrow {
@@ -320,6 +324,40 @@
             min-width: 42px;
         }
     }
+
+    @media (max-width: 420px) {
+
+        .links-page {
+            padding: 78px 12px 36px;
+        }
+
+        .link-card {
+            align-items: flex-start;
+            padding: 14px;
+        }
+
+        .link-content {
+            margin-left: 12px;
+        }
+
+        .link-content p {
+            font-size: 0.8rem;
+            line-height: 1.45;
+        }
+
+        .link-arrow {
+            display: none;
+        }
+
+        .contact-box {
+            padding: 22px 16px;
+        }
+
+        .email-button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
 </style>
 
 
@@ -337,6 +375,10 @@
         <a href="index.html" class="logo">
             Arshvir<span></span>
         </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
         <ul class="nav-links">
 
