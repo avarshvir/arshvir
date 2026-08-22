@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const textArray = [
             "AI/ML Engineer", 
             "Software Developer", 
-            "Deep Learning Enthusiast", 
+            //"Deep Learning Enthusiast", 
             "Computer Programmer"
         ];
         const typingDelay = 100;
