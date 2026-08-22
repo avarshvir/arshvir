@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Arshvir | Links</title>
+
+<!-- Existing Portfolio Styles -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    /* ================================
+       LINKS PAGE
+    ================================= */
+
+    .links-page {
+        min-height: 100vh;
+        padding: 100px 20px 60px;
+        background: #f8fafc;
+    }
+
+    .links-container {
+        width: 100%;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    /* Profile */
+
+    .links-profile {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .links-profile img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #2563eb;
+        padding: 3px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+    }
+
+    .links-profile h1 {
+        margin-top: 18px;
+        margin-bottom: 8px;
+        font-size: 2rem;
+        color: #111827;
+    }
+
+    .links-profile h1 span {
+        color: #2563eb;
+    }
+
+    .links-profile p {
+        color: #64748b;
+        font-size: 1rem;
+        margin: 5px auto;
+    }
+
+    .links-profile .bio {
+        max-width: 600px;
+        margin: 12px auto 0;
+        line-height: 1.7;
+    }
+
+    /* Main Link Cards */
+
+    .links-list {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .link-card {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 18px 22px;
+        color: #111827;
+        transition: all 0.25s ease;
+        box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    .link-card:hover {
+        transform: translateY(-3px);
+        border-color: #2563eb;
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.12);
+    }
+
+    .link-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #eff6ff;
+        color: #2563eb;
+        font-size: 1.25rem;
+    }
+
+    .link-content {
+        margin-left: 16px;
+        flex: 1;
+    }
+
+    .link-content h3 {
+        margin: 0 0 4px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .link-content p {
+        margin: 0;
+        font-size: 0.85rem;
+        color: #64748b;
+    }
+
+    .link-arrow {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        transition: 0.2s ease;
+    }
+
+    .link-card:hover .link-arrow {
+        color: #2563eb;
+        transform: translateX(4px);
+    }
+
+    /* Section */
+
+    .links-section {
+        margin-top: 42px;
+    }
+
+    .links-section-title {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .links-section-title i {
+        color: #2563eb;
+    }
+
+    .links-section-title h2 {
+        margin: 0;
+        font-size: 1.15rem;
+        color: #111827;
+    }
+
+    /* Social Grid */
+
+    .social-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .social-card {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding: 16px;
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #111827;
+        transition: all 0.25s ease;
+    }
+
+    .social-card:hover {
+        transform: translateY(-3px);
+        border-color: #2563eb;
+        box-shadow: 0 8px 20px rgba(37, 99, 235, 0.10);
+    }
+
+    .social-card i {
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #eff6ff;
+        color: #2563eb;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+
+    .social-card span {
+        font-weight: 500;
+        font-size: 0.95rem;
+    }
+
+    /* Contact */
+
+    .contact-box {
+        margin-top: 42px;
+        padding: 28px;
+        text-align: center;
+        background: linear-gradient(135deg, #eff6ff, #ffffff);
+        border: 1px solid #dbeafe;
+        border-radius: 14px;
+    }
+
+    .contact-box i {
+        color: #2563eb;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-box h2 {
+        margin: 5px 0 8px;
+        color: #111827;
+        font-size: 1.25rem;
+    }
+
+    .contact-box p {
+        color: #64748b;
+        margin-bottom: 15px;
+    }
+
+    .email-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 11px 18px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: 0.2s ease;
+    }
+
+    .email-button:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    /* Footer */
+
+    .links-footer {
+        text-align: center;
+        margin-top: 45px;
+        padding-top: 25px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .links-footer p {
+        margin: 5px 0;
+        color: #94a3b8;
+        font-size: 0.85rem;
+    }
+
+    .back-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        margin-bottom: 15px;
+        color: #2563eb;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .back-home:hover {
+        text-decoration: underline;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 650px) {
+
+        .links-page {
+            padding: 80px 15px 40px;
+        }
+
+        .links-profile img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .links-profile h1 {
+            font-size: 1.7rem;
+        }
+
+        .social-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .link-card {
+            padding: 16px;
+        }
+
+        .link-icon {
+            width: 42px;
+            height: 42px;
+            min-width: 42px;
+        }
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<!-- Navigation -->
+
+<nav class="navbar">
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Arshvir<span></span>
+        </a>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html#home">Home</a>
+            </li>
+
+            <li>
+                <a href="index.html#about">About Me</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="index.html#experience">Experience</a>
+            </li>
+
+            <li>
+                <!--<a href="certifications.html">Certifications</a>-->
+            </li>
+
+            <li class="dropdown">
+
+                <a href="javascript:void(0)" class="dropbtn">
+                    Other Portfolio
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+
+                <div class="dropdown-content">
+
+                    <a href="https://github.com/avarshvir" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="https://codeforces.com/profile/arshvir7" target="_blank">
+                        <i class="fa-solid fa-code"></i>
+                        Codeforces
+                    </a>
+
+                    <a href="https://leetcode.com/u/avarshvir/" target="_blank">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        LeetCode
+                    </a>
+
+                    <a href="https://in.linkedin.com/in/arshvir-995a91203" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn
+                    </a>
+
+                    <a href="https://medium.com/@arshvir21303031" target="_blank">
+                        <i class="fa-brands fa-medium"></i>
+                        Medium
+                    </a>
+
+                    <a href="links.html">
+                        <i class="fas fa-globe"></i>
+                        All Links
+                    </a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- Links Page -->
+
+<main class="links-page">
+
+    <div class="links-container">
+
+
+        <!-- Profile -->
+
+
+        <!-- Main Professional Links -->
+
+        <section class="links-section">
+
+            <div class="links-section-title">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <h2>My All Social Links</h2>
+
+            </div>
+
+
+            <div class="links-list">
+
+
+                <!-- Portfolio -->
+
+                <a class="link-card"
+                    href="index.html">
+
+                    <div class="link-icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>My Portfolio</h3>
+
+                        <p>
+                            Explore my experience, skills, and projects
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>
+
+
+                <!-- GitHub -->
+
+                <a class="link-card"
+                    href="https://github.com/avarshvir"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>GitHub</h3>
+
+                        <p>
+                            Open-source projects, code, and experiments
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>
+
+
+                <!-- LinkedIn -->
+
+                <a class="link-card"
+                    href="https://in.linkedin.com/in/arshvir-995a91203"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>LinkedIn</h3>
+
+                        <p>
+                            Professional experience and career profile
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>
+
+
+                <!-- Jaiho Labs -->
+
+                <!--<a class="link-card"
+                    href="https://jaiholabs.w3spaces.com/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>Jaiho Labs</h3>
+
+                        <p>
+                            My lab for AI, software, and experimental projects
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>---->
+
+
+                <!-- Kaggle -->
+<!----
+                <a class="link-card"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-kaggle"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>Kaggle</h3>
+
+                        <p>
+                            Machine learning datasets, notebooks, and experiments
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>--->
+
+
+                <!-- PyPI -->
+
+                <a class="link-card"
+                    href="https://pypi.org/search/?q=avarshvir"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>PyPI</h3>
+
+                        <p>
+                            Published Python packages and libraries
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>
+
+
+                <!-- Codeforces -->
+
+                <a class="link-card"
+                    href="https://codeforces.com/profile/arshvir7"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>Codeforces</h3>
+
+                        <p>
+                            Competitive programming and problem solving
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>
+
+
+                <!-- LeetCode -->
+
+                <a class="link-card"
+                    href="https://leetcode.com/u/avarshvir/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <div class="link-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+
+                    <div class="link-content">
+
+                        <h3>LeetCode</h3>
+
+                        <p>
+                            Data structures, algorithms, and problem solving
+                        </p>
+
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Social Media -->
+
+        <section class="links-section">
+
+            <div class="links-section-title">
+
+                <i class="fa-solid fa-share-nodes"></i>
+
+                <h2>Social & Content</h2>
+
+            </div>
+
+
+            <div class="social-grid">
+
+
+                <a class="social-card"
+                    href="https://www.youtube.com/@arshvir"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                    <span>YouTube</span>
+
+                </a>
+
+
+                <a class="social-card"
+                    href="https://medium.com/@arshvir21303031"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-medium"></i>
+
+                    <span>Medium</span>
+
+                </a>
+
+
+                <a class="social-card"
+                    href="https://www.instagram.com/avarshvir"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <span>Instagram</span>
+
+                </a>
+
+
+                <a class="social-card"
+                    href="https://x.com/arshvir3972"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-x-twitter"></i>
+
+                    <span>X / Twitter</span>
+
+                </a>
+
+
+                <!-- Add more social platforms here -->
+
+                <a class="social-card"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                    <span>Facebook</span>
+
+                </a>
+
+
+                <a class="social-card"
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    <i class="fa-brands fa-telegram"></i>
+
+                    <span>Telegram</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section class="contact-box">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <h2>Want to work together?</h2>
+
+            <p>
+                I'm open to interesting projects, collaborations,
+                and AI/ML opportunities.
+            </p>
+
+            <a class="email-button"
+                href="mailto:arshvir883@gmail.com">
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+                Email Me
+
+            </a>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer class="links-footer">
+
+            <a href="index.html" class="back-home">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Portfolio
+
+            </a>
+
+            <p>
+                Made with ❤️ by Arshvir
+            </p>
+
+            <p>
+                © 2026 Arshvir. All rights reserved. | India
+            </p>
+
+        </footer>
+
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
