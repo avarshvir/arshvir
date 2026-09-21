@@ -118,15 +118,20 @@ knowledge retrieval, reasoning, and memory-aware conversations.</li>
             <div class="project-detailed-card">
                 <h3>NanoOCR - Optical Character Recognition Model</h3>
                 <ul class="project-bullets">
-                    <li>Developed NanoOCR, a lightweight Optical Character Recognition (OCR) system trained from scratch on ~45,500 character images across 36 alphanumeric classes, achieving 97.46% validation accuracy.</li>
-                    <li>Designed a compact CNN architecture with Batch Normalization, ReLU, MaxPooling, Dropout, and a fully connected classification head, reducing the model to just 626K parameters (~2.4 MB)./li>
-                    <li>Optimized model training using AdamW and Cross-Entropy Loss, achieving 97.22% training accuracy in ~45 seconds over 5 epochs on a single T4 GPU.</li>
-                    <li>Built an end-to-end image processing pipeline using OpenCV for Gaussian denoising, adaptive thresholding, contour-based character segmentation, and left-to-right bounding-box sorting.</li>
-                    <li>Deployed the OCR model as a web application using FastAPI, ONNX CPU inference, JavaScript, HTML, and Tailwind CSS, enabling near-real-time character recognition with a lightweight inference footprint.</li>    
+                    <li>Built and trained a lightweight, 4.8 million parameter Optical Character Recognition (OCR) model from scratch on Google Colab using a 
+CRNN (CNN + BiLSTM) architecture.</li>
+                    <li>Created a memory efficient data streaming pipeline to train the model on 2.32 million images, loading files one by one to completely      
+bypass hardware and memory limits without downloading the entire dataset at once.</li>
+                    <li>Executed a 3-phase training strategy, starting with a massive synthetic dataset and then fine-tuning the model on real-world scene text to 
+adapt it to messy, blurry, real-life images.</li>
+                    <li>Achieved 79.20% accuracy on unseen MJSynth images and 78.37% on IIIT5k, maintaining a low Character Error Rate (CER) of 8.56%                
+and 3.40 CTC loss.</li>
+                    <li> Published the final 18.3 MB model as a public PyPI package (pip install nano-ocr), making it instantly deployable for edge devices, 
+embedded systems, and low-power hardware.</li>    
                 </ul>
-                <a href="https://www.kaggle.com/datasets/preatcher/standard-ocr-dataset" class="btn btn-sm" target="_blank">Kaggle Dataset</a>
-                <a href="https://github.com/avarshvir/NanoOCR" class="btn btn-sm" target="_blank">View Project</a>
-                
+                <a href="https://pypi.org/project/nano-ocr/" class="btn btn-sm" target="_blank">PyPI Package</a>
+                <a href="https://github.com/avarshvir/nano-ocr" class="btn btn-sm" target="_blank">Source Code</a>
+                <a href="https://avarshvir.github.io/nano-ocr/" class="btn btn-sm" target="_blank">Website</a>
             </div>
             
             <div class="project-detailed-card">
